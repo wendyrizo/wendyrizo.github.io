@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 a {
     color: var(--link-color);
     text-decoration: underline 2px;
@@ -34,6 +38,15 @@ footer {
     margin-inline: auto;
     padding-inline: 1rem;
     box-sizing: border-box;
+}
+
+.section-container {
+    margin: 1.5rem 0;
+}
+
+.highlight {
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .secondary-text {
@@ -69,5 +82,18 @@ footer {
 }
 
 .projects-section li {
+    margin-top: 1rem;
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
     margin-top: 1rem;
 }
