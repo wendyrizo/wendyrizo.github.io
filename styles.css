@@ -2,23 +2,42 @@
     --bg-color: #00050D;
     --text-color: #7BA7C9;
     --secondary-text: #8FAFC8;
-    --link-color: #C4DDF0;
+    --accent-color: #C4DDF0;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: monospace;
-    font-size: 1rem;
+    font-size: var(--text-base);
     line-height: 1.6;
 }
 
-h1, h2 {
+h1 {
+    font-size: var(--text-xl);
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+
+h1, h2, p {
     margin: 0;
 }
 
+hr {
+    border: 1px solid var(--secondary-text);
+    opacity: 0.5;
+}
+
 a {
-    color: var(--link-color);
+    color: var(--accent-color);
     text-decoration: underline 2px;
 }
 
@@ -29,19 +48,20 @@ a:hover {
 
 footer {
     text-align: center;
+    font-size: var(--text-sm);
 }
 
 .container {
     width: 100%;
     max-width: 56rem;
-    margin: 4rem auto;
+    margin: 2rem auto;
     margin-inline: auto;
     padding-inline: 1rem;
     box-sizing: border-box;
 }
 
 .section-container {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
 }
 
 .highlight {
@@ -53,16 +73,52 @@ footer {
     color: var(--secondary-text);
 }
 
-.profile-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+.banner {
+    width: 100%;
+    height: 140px;
+    background: url("images/banner.jpg") no-repeat fixed center;
+    background-color: var(--text-color);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: -4.5rem;
+    margin-left: 0.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border: 6px solid var(--bg-color);
 }
 
 .profile-data {
-    margin: 0;
-    line-height: 1;
+    padding: 0 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.name {
+  margin: 0.25rem 0;
+}
+
+.profile-data .secondary-text {
+    font-size: var(--text-xs);
+}
+
+.bio {
+    margin: 0 1rem;
+    padding: 0.75rem;
+    font-size: var(--text-sm);
+    min-height: 40px;
+}
+
+.bio h2 {
+    font-size: var(--text-sm);
+    margin: 0.5rem 0;
 }
 
 .inventory {
