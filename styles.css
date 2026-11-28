@@ -95,7 +95,7 @@ footer {
     aspect-ratio: 3/ 1;
     min-height: 120px;
     max-height: 220px;
-    background: url("images/banner.jpg") center / cover no-repeat;
+    background: url("images/banner.webp") center / cover no-repeat;
     background-color: var(--text-color);
     overflow: hidden;
 }
