@@ -11,10 +11,27 @@
     --text-xl: 1.25rem;
 }
 
+
+@font-face {
+    font-family: "Geist Mono";
+    src: url("fonts/GeistMono-Variable.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geist Mono";
+    src: url("fonts/GeistMono-Italic-Variable.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: monospace;
+    font-family: "Geist Mono", monospace;
     font-size: var(--text-base);
     line-height: 1.6;
 }
